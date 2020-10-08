@@ -24,6 +24,8 @@ public class AwsSqsConfig {
 	@Value("${cloud.aws.credentials.secret-key}")
 	private String awsSecretKey;
 
+	//BASICALLY THIS IS THE CONFIGURATION----> FOR TALKING WITH SQS
+	
 	// CREATE A BEAN OF MESSAGING QUEUE TEMPLATE
 	@Bean
 	public QueueMessagingTemplate queueMessagingTemplate() {
